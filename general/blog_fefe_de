@@ -1,0 +1,18 @@
+{
+    "name": "Fefes Blog",
+    "url": "https://blog.fefe.de/",
+    "stamp": 1576948833,
+    "author": "de-es",
+    "match": "blog.fefe.de",
+    "config": {
+        "type": "xpath",
+        "xpath": "\/ul\/li",
+        "modify": [
+            {
+                "type": "regex",
+                "pattern": "\/\\[l\\]<\\\/a> \/",
+                "replace": ""
+            }
+        ]
+    }
+}
