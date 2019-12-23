@@ -10,7 +10,7 @@
         "modify": [
             {
                 "type": "regex",
-                "pattern": "\/\\[l\\]<\\\/a> \/",
+                "pattern": "\/<a href=\".*?\">\\[l\\]<\\\/a> \/",
                 "replace": ""
             }
         ]
