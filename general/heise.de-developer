@@ -1,20 +1,29 @@
 {
-    "name": "heise.de\/developer",
-    "url": "heise.de\/developer",
-    "stamp": 1441097731,
-    "author": "Philipp A. Baer",
+    "name": "heise Developer",
+    "url": "https://www.heise.de/developer/",
+    "stamp": 1576948833,
+    "author": "de-es",
     "match": "heise.de\/developer",
     "config": {
         "type": "xpath",
-        "xpath": "article",
+        "multipage": {
+            "xpath": "a[@class='seite_weiter']",
+            "append": true
+        },
+        "xpath": [
+            "p[@class='article-content__lead']",
+            "div[contains(@class, 'article-content')]"
+        ],
+        "modify": [
+            {
+                "type": "replace",
+                "search": "\/forum\/",
+                "replace": "https:\/\/www.heise.de\/forum\/"
+            }
+        ],
         "cleanup": [
-            "p[contains(@class,'news_datum')]",
-            "div[contains(@class,'readspeakerr')]",
-            "h1[contains(@class,'clear')]",
-            "noscript",
-            "comment()",
-            "script",
-            "footer"
+            "nav[@class='pre-akwa-toc']",
+            "div[contains(@class, 'akwa-inline-textbox')]"
         ]
     }
 }
