@@ -1,20 +1,38 @@
 {
-    "name": "heise.de\/newsticker",
-    "url": "heise.de\/newsticker",
-    "stamp": 1441097907,
-    "author": "Philipp A. Baer",
+    "name": "heise Newsticker",
+    "url": "https://www.heise.de/newsticker/",
+    "stamp": 1576948833,
+    "author": "de-es",
     "match": "heise.de\/newsticker",
     "config": {
         "type": "xpath",
-        "xpath": "article",
+        "multipage": {
+            "xpath": "a[@class='a-pagination__link']",
+            "append": true
+        },
+        "xpath": [
+            "p[@class='a-article-header__lead']",
+            "div[contains(@class, 'article-layout__content\n    article-content')]"
+        ],
+        "modify": [
+            {
+                "type": "replace",
+                "search": "\/forum\/",
+                "replace": "https:\/\/www.heise.de\/forum\/"
+            }
+        ],
         "cleanup": [
-            "p[contains(@class,'news_datum')]",
-            "div[contains(@class,'readspeakerr')]",
-            "h1[contains(@class,'clear')]",
-            "noscript",
-            "comment()",
-            "script",
-            "footer"
+            "a-collapse",
+            "a-paternoster",
+            "a-bilderstrecke",
+            "a-ad",
+            "figure",
+            "a[contains(@class, 'a-pagination')]",
+            "h5[@id='pagination-heading']",
+            "ol[contains(@class, 'a-pagination__items')]",
+            "p[@id='pagination-all-on-one-page']",
+            "a[contains(@class, 'a-button')]",
+            "div[@class='articlebox']"
         ]
     }
 }
