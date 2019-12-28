@@ -1,0 +1,17 @@
+{
+    "name": "Caschys Blog",
+    "url": "http://stadt-bremerhaven.de/feed",
+    "stamp": 1576948833,
+    "author": "de-es",
+    "match": "stadt-bremerhaven.de",
+    "config": {
+        "type": "xpath",
+        "xpath": [
+            "div[@class='entry-inner']"
+        ],
+        "cleanup": [
+            "img",
+            "noscript"
+        ]
+    }
+}
