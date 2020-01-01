@@ -1,0 +1,21 @@
+{
+    "name": "heise c't",
+    "url": "https://www.heise.de/ct/",
+    "stamp": 1576948833,
+    "author": "de-es",
+    "match": "heise.de\/ct",
+    "config": {
+        "type": "xpath",
+        "xpath": [
+            "section"
+        ],
+        "cleanup": [
+            "div[@class='article_page_img']",
+            "p\/small[@class='text-muted']",
+            "ul[@class='list-unstyled article_page_info clearfix']",
+            "script",
+            "a-paternoster",
+            "a-ad"
+        ]
+    }
+}
