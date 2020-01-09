@@ -16,10 +16,14 @@
         ],
         "cleanup": [
             "section",
+            "script",
             "a[@class='golem-gallery2-nojs']",
             "div[@id='gsidetoc']",
+            "div[@id='iqadtile4']",
             "div[@id='iqadtile8']",
-            "figure[@id]"
+            "figure[@id]",
+            "ul[@class='ulist-article']",
+            "p[@id='gfpop']"
         ]
     }
 }
