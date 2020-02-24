@@ -29,7 +29,8 @@
             "h5[@id='pagination-heading']",
             "ol[contains(@class, 'a-pagination__items')]",
             "p[@id='pagination-all-on-one-page']",
-            "a[contains(@class, 'a-button')]"
+            "a[contains(@class, 'a-button')]",
+            "a-collapse[contains(@class, 'a-u-hide-from-desktop')]"
         ]
     }
 }
