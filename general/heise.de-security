@@ -12,7 +12,7 @@
         },
         "xpath": [
             "p[@class='a-article-header__lead']",
-            "div[contains(@class, 'article-layout__content\n    article-content')]"
+            "div[contains(@class, 'article-layout__content article-content')]"
         ],
         "modify": [
             {
