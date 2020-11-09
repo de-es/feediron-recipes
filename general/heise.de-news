@@ -3,7 +3,7 @@
     "url": "https://www.heise.de/news/",
     "stamp": 1576948833,
     "author": "de-es",
-    "match": "heise.de\/news",
+    "match": "heise.de\/news|heise.de\/meinung",
     "config": {
         "type": "xpath",
         "multipage": {
