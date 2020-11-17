@@ -19,15 +19,25 @@
                 "type": "replace",
                 "search": "\/forum\/",
                 "replace": "https:\/\/www.heise.de\/forum\/"
+            },
+            {
+                "type": "replace",
+                "search": "Inhaltsverzeichnis",
+                "replace": ""
+            },
+            {
+                "type": "replace",
+                "search": "Lesen Sie auch",
+                "replace": ""
             }
         ],
         "cleanup": [
+            "nav",
             "a-collapse",
             "a-paternoster",
             "a-bilderstrecke",
             "a-ad",
             "figure",
-            "a[contains(@class, 'a-pagination')]",
             "h5[@id='pagination-heading']",
             "ol[contains(@class, 'a-pagination__items')]",
             "p[@id='pagination-all-on-one-page']",
